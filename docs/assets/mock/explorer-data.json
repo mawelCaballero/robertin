@@ -1,0 +1,38 @@
+{
+
+  "data": [
+
+    {
+      "id": "port",
+      "type": "Century SFW Gbe Ring",
+      "bandwidth": "2.3",
+      "protected": true,
+      "diameter": "List item"
+
+    },
+    {
+      "id": "ne",
+      "type": "lr-Century-01",
+      "bandwidth": "4.7",
+      "protected": true,
+      "diameter": "List item"
+    },
+    {
+      "id":"ne",
+      "type": "lr-CenturyLink-01",
+      "bandwidth": "3.4",
+      "protected": true,
+      "diameter": "List item"
+    },
+    {
+      "id": "ne",
+      "type": "lr-CenturyLink-02",
+      "bandwidth": "1.9",
+      "protected": false,
+      "diameter": "List item"
+    }
+
+
+  ]
+
+}

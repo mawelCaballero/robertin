@@ -1,0 +1,292 @@
+{
+  "data": [
+    {
+      "title": "CONNECTIONID",
+      "value": 914
+    },
+    {
+      "title": "CONNECTIONSHAPE",
+      "value": 8
+    },
+    {
+      "title": "CREATEDBY",
+      "value": 9
+    },
+    {
+      "title": "MANUALFAULTMARKINGSTATUS",
+      "value": 0
+    },
+    {
+      "title": "INVARIANTCONNID",
+      "value": 914
+    },
+    {
+      "title": "ENCONDING",
+      "value": ""
+    },
+    {
+      "title": "CONNECTIONNAME",
+      "value": "ath_PS32_tc01/A2325A-1-10-LINE tul_PS32_tc01/A2325A-1-2-LINE OMS"
+    },
+    {
+      "title": "CONNECTIONSTATE",
+      "value": 9
+    },
+    {
+      "title": "SERVERGROUPID",
+      "value": 0
+    },
+    {
+      "title": "LOCKEDCAPACITY",
+      "value": 0
+    },
+    {
+      "title": "ObjectIdentifier",
+      "value": 0
+    },
+    {
+      "title": "WAVESHAPE",
+      "value": ""
+    },
+    {
+      "title": "CONTAINERTYPE",
+      "value": "oms"
+    },
+    {
+      "title": "ADAPTED",
+      "value": 0
+    },
+    {
+      "title": "CAPACITY",
+      "value": 0
+    },
+    {
+      "title": "RESTORATIONTRIGGER",
+      "value": 0
+    },
+    {
+      "title": "CONNECTIONLEVEL",
+      "value": 0
+    },
+    {
+      "title": "PHASEENCODING",
+      "value": ""
+    },
+    {
+      "title": "NCGROUPID",
+      "value": 0
+    },
+    {
+      "title": "SERVICECONNECTION",
+      "value": 0
+    },
+    {
+      "title": "EFFECTIVERATE",
+      "value": "OMS"
+    },
+    {
+      "title": "INDIRECTSNCNAME",
+      "value": ""
+    },
+    {
+      "title": "NCGIDFORMDFY",
+      "value": "0"
+    },
+    {
+      "title": "ASAPID",
+      "value": 0
+    },
+    {
+      "title": "GROUPCLASS",
+      "value": "0"
+    },
+    {
+      "title": "ROUTESELECTIONMODE",
+      "value": 4
+    },
+    {
+      "title": "PROTECTIONROLE",
+      "value": 0
+    },
+    {
+      "title": "SDHCONNECTIONID",
+      "value": ""
+    },
+    {
+      "title": "ASSOCIATEDNPRTLID",
+      "value": 42
+    },
+    {
+      "title": "ANE1NAME",
+      "value": "ath_PS32_tc01"
+    },
+    {
+      "title": "CONNECTIONQUALIFIER",
+      "value": "0"
+    },
+    {
+      "title": "IGNOREALARM",
+      "value": 1
+    },
+    {
+      "title": "PROTECTIONTYPE",
+      "value": 1
+    },
+    {
+      "title": "SDHCLIENTID",
+      "value": ""
+    },
+    {
+      "title": "PREFERREDRESTORATIONMODE",
+      "value": ""
+    },
+    {
+      "title": "ZNE1NAME",
+      "value": "tul_PS32_tc01"
+    },
+    {
+      "title": "CONNECTIONALIAS",
+      "value": ""
+    },
+    {
+      "title": "CUSTOMERNAME",
+      "value": "None"
+    },
+    {
+      "title": "REVERTIVEMODE",
+      "value": 0
+    },
+    {
+      "title": "SDHROUTEMODTIME",
+      "value": ""
+    },
+    {
+      "title": "BAND",
+      "value": "C"
+    },
+    {
+      "title": "ATP1NAME",
+      "value": "A2325A-1-10-LINE"
+    },
+    {
+      "title": "CONNECTIONRATE",
+      "value": 40
+    },
+    {
+      "title": "CUSTOMERPRIORITY",
+      "value": ""
+    },
+    {
+      "title": "SERVERLAYERRATE",
+      "value": 0
+    },
+    {
+      "title": "OMSPTRAILID",
+      "value": 0
+    },
+    {
+      "title": "PROVISIONABLEWAVEKEY",
+      "value": ""
+    },
+    {
+      "title": "ZTP1NAME",
+      "value": "A2325A-1-2-LINE"
+    },
+    {
+      "title": "SERVICERATE",
+      "value": 2
+    },
+    {
+      "title": "VPNID",
+      "value": ""
+    },
+    {
+      "title": "CONNECTIONTYPE",
+      "value": 0
+    },
+    {
+      "title": "SYSTEMLABEL",
+      "value": ""
+    },
+    {
+      "title": "WAVEKEYTYPE",
+      "value": ""
+    },
+    {
+      "title": "ANE2NAME",
+      "value": ""
+    },
+    {
+      "title": "MSPAPSSWITCHTYPE",
+      "value": 0
+    },
+    {
+      "title": "QUALITY",
+      "value": ""
+    },
+    {
+      "title": "TANDEMASSOCIATIONTAG",
+      "value": 0
+    },
+    {
+      "title": "TCMSTATUS",
+      "value": 0
+    },
+    {
+      "title": "SPECTRUMWIDTH",
+      "value": 0
+    },
+    {
+      "title": "ZNE2NAME",
+      "value": ""
+    },
+    {
+      "title": "CONNECTIONDIRECTION",
+      "value": 2
+    },
+    {
+      "title": "DISCREPANCY",
+      "value": 0
+    },
+    {
+      "title": "CONNECTIONNAMEFORMAT",
+      "value": 4
+    },
+    {
+      "title": "SERVICESTATE",
+      "value": 1
+    },
+    {
+      "title": "OFFSET",
+      "value": 0
+    },
+    {
+      "title": "ATP2NAME",
+      "value": ""
+    },
+    {
+      "title": "CONNECTIONCATEGORY",
+      "value": 1
+    },
+    {
+      "title": "CREATIONTIME",
+      "value": "1603859795"
+    },
+    {
+      "title": "DISPLAYSERVICERATE",
+      "value": 2
+    },
+    {
+      "title": "OPERATIONALSTATE",
+      "value": 0
+    },
+    {
+      "title": "FECTYPE",
+      "value": ""
+    },
+    {
+      "title": "ZTP2NAME",
+      "value": ""
+    }
+  ]
+}
