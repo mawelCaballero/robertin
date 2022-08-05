@@ -1,0 +1,57 @@
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div
+  id="main-wrapper"
+  [ngClass]="{ 'show-sidebar': showMobileMenu }"
+  [dir]="options.dir"
+  [attr.data-theme]="options.theme"
+  [attr.data-layout]="options.layout"
+  [attr.data-sidebartype]="options.sidebartype"
+  [attr.data-sidebar-position]="options.sidebarpos"
+  [attr.data-header-position]="options.headerpos"
+  [attr.data-boxed-layout]="options.boxed"
+  data-sidebartype="full"
+>
+  <mkt-header
+    (handleShowMobileMenu)="handleShowMobileMenu($event)"
+    [options]="options"
+  >
+    <div id="vertical-nav">
+      <app-vertical-navigation (toggleSidebar)="toggleSidebarType()">
+      </app-vertical-navigation>
+    </div>
+    <div id="horizontal-nav">
+      <app-horizontal-navigation
+        class="w-100 d-flex align-items-center justify-content-between"
+      >
+      </app-horizontal-navigation>
+    </div>
+  </mkt-header>
+
+  <mkt-sidenav [sidebarbg]="options.sidebarbg">
+    <div *ngIf="options.layout === 'horizontal'; else vlayout">
+      <app-horizontal-sidebar></app-horizontal-sidebar>
+    </div>
+
+    <ng-template #vlayout>
+      <div class="scroll-sidebar" [perfectScrollbar]="config">
+        <app-vertical-sidebar
+          [showClass]="showMobileMenu"
+          (notify)="handleClick()"
+        >
+        </app-vertical-sidebar>
+      </div>
+    </ng-template>
+  </mkt-sidenav>
+
+  <div class="page-wrapper" style="padding-top: 120px">
+    <app-breadcrumb></app-breadcrumb>
+
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+
+    <mkt-footer>Roberto. informe sobre hematologías. </mkt-footer>
+  </div>
+</div>

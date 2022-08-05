@@ -1,0 +1,34 @@
+.dropdown-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-left: 5px;
+}
+
+.dropdown-element:hover,
+.dropdown-element:focus {
+  color: #1e2125;
+  background-color: #e9ecef;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.dropdown-container {
+  min-width: 200px;
+}
+
+.dropdown-item {
+  pointer-events: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  .arrow-icon {
+    display: none !important;
+  }
+}

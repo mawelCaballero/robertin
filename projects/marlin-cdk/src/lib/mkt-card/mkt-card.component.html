@@ -1,0 +1,45 @@
+<div class="card text-white bg-{{ cardConfiguration?.cardType }}">
+  <div class="card-body" (click)="onCardClick($event)">
+    <div class="d-flex flex-row align-items-center mb-3">
+      <span style="padding-bottom: 10px; padding-right: 5px">
+        <i-feather
+          [name]="cardConfiguration?.iconType"
+          class="feather-lg fill-white"
+        ></i-feather>
+      </span>
+      <h3 class="card-title pl-3 font-medium">
+        {{ cardConfiguration?.title }}
+      </h3>
+      <span style="padding-bottom: 10px; padding-right: 5px">
+        <i-feather name="alarm" class="alert-triangule fill-white"></i-feather>
+      </span>
+    </div>
+    <div class="row text-left">
+      <h6 class="card-subtitle text-white">
+        {{ cardConfiguration?.subtitle }}
+      </h6>
+    </div>
+    <div
+      class="row text-center text-white m-2"
+      style="
+        border: 1px solid whitesmoke;
+        -webkit-background-clip: padding-box; /* for Safari */
+        background-clip: padding-box;
+        border-radius: 2px;
+        padding: 5px;
+      "
+    >
+      <div
+        *ngFor="let item of cardConfiguration.text"
+        class="col-12 text-center text-uppercase font-weight-bold d-flex flex-row"
+      >
+        <span class="fs-3 flex-row flex-grow-3 text-center op-5">
+          {{ item.split(":")[0] + ":" }}
+        </span>
+        <span class="fs-3 flex-row text-center">
+          {{ item.split(":")[1] }}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div *ngIf="filters?.length > 0">
+  <h4>{{ title }}</h4>
+</div>
+<div>
+  <span class="mkt-chip" *ngFor="let filteItem of filters">
+    {{ filteItem.key }}:{{ filteItem.value }}
+    <a
+      (click)="removeFilter(filteItem)"
+      style="padding-top: 2px; padding-left: 2px; color: white"
+      >x</a
+    ></span
+  >
+</div>

@@ -1,0 +1,123 @@
+#main-wrapper[data-layout="vertical"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.active
+  > .sidebar-link
+  .feather,
+#main-wrapper[data-layout="vertical"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.active
+  > .sidebar-link
+  i,
+#main-wrapper[data-layout="horizontal"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.active
+  > .sidebar-link
+  .feather,
+#main-wrapper[data-layout="horizontal"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.visited
+  .sidebar-item.active
+  > .sidebar-link
+  i {
+  color: map-get($merkator-colors, primary-1);
+}
+
+#main-wrapper[data-layout="vertical"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.active
+  > .sidebar-link,
+#main-wrapper[data-layout="horizontal"]
+  .left-sidebar[data-sidebarbg="skin6"]
+  .sidebar-nav
+  ul
+  .sidebar-item.active
+  > .sidebar-link {
+  color: map-get($merkator-colors, primary-1);
+}
+
+.sidebar-link,
+span .hide-menu {
+  color: map-get($merkator-colors, primary-1);
+}
+
+.btn-primary:hover,
+.btn-info:hover {
+  background-color: map-get($merkator-colors, primary-1-light);
+}
+.btn-default,
+.btn-info {
+  background-color: map-get($merkator-colors, primary-1);
+}
+
+.btn-outline-success,
+.btn-outline-success.active {
+  color: map-get($merkator-colors, primary-2) !important;
+  border-color: map-get($merkator-colors, primary-2) !important;
+}
+
+.btn-secondary,
+.btn-outline-success:active,
+.btn-outline-success:hover {
+  background-color: map-get($merkator-colors, primary-2);
+  color: white !important;
+}
+
+.btn-warning {
+  background-color: map-get($merkator-colors, att-1);
+}
+
+.topbar,
+#main-wrapper .topbar,
+.collapse,
+footer {
+  background-color: #ff0235 !important;
+  color: white !important;
+}
+
+.sidebar-nav ul .sidebar-item .first-level {
+  background-color: #ff0235 !important;
+  color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+// .collapse .hide-menu {
+//   color: white!important;
+// }
+
+.theme-link {
+  background: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white !important;
+}
+
+//Tables
+
+.datatable-header-cell {
+  background-color: map-get($merkator-colors, primary-1) !important;
+  color: white !important;
+}
+
+.page-item.active .page-link {
+  background-color: #151e36;
+  border-color: #151e36;
+}
+
+.icon-small {
+  height: 16px !important;
+  width: 16px !important;
+}

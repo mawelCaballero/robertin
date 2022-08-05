@@ -1,0 +1,25 @@
+<div ngbDropdown class="d-flex">
+  <button
+    class="btn d-block w-100 btn-outline-light text-dark waves-effect waves-light"
+    id="dropdown1"
+    ngbDropdownToggle
+  >
+    <i-feather *ngIf="icon" [name]="icon" class="icon-small"></i-feather>
+    <ng-container *ngIf="!icon">{{ name }}</ng-container>
+  </button>
+  <div
+    ngbDropdownMenu
+    aria-labelledby="dropdown1"
+    class="w-100 dropdown-container"
+  >
+    <div
+      class="dropdown-element"
+      *ngFor="let option of options"
+      (click)="toggle(option)"
+    >
+      <div ngbDropdownItem class="dropdown-item">
+        {{ option }}
+      </div>
+    </div>
+  </div>
+</div>

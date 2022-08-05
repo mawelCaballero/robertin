@@ -1,0 +1,48 @@
+.searchResults {
+  position: absolute;
+  left: 0;
+  opacity: 0.8;
+  background: #151e36;
+  color: white;
+  min-height: 200px;
+  width: 100%;
+  padding: 10px;
+  a,
+  a:hover,
+  a:visited {
+    color: white;
+  }
+}
+
+.searchResults:focus {
+  border: 1px solid white;
+}
+
+.result-item {
+  padding: 10px;
+
+  p {
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+  a {
+    padding: 5px;
+  }
+
+  p:hover {
+    border: 1px solid #151e36;
+  }
+}
+
+.result-item:focus {
+  border-radius: 10px;
+  border: 1px solid #888d98;
+}
+
+.result-item:hover {
+  border: 2px solid #f9fafa;
+  border-radius: 10px;
+}

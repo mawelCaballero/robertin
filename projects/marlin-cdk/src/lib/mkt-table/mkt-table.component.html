@@ -1,0 +1,38 @@
+<div class="row">
+  <h4 class="card-title mb-0" *ngIf="title">
+    <span class="lstick"></span>{{ title }}
+  </h4>
+  <span class="card-subtitle" *ngIf="subtitle">{{ subtitle }}</span>
+</div>
+<div class="table-responsive">
+  <table class="table table-striped border material" id="data-table">
+    <ng-content></ng-content>
+  </table>
+</div>
+<div class="d-flex justify-content-center p-2" *ngIf="showPagination">
+  <ngb-pagination
+    [collectionSize]="dataLength"
+    [(page)]="page"
+    [ellipses]="true"
+    [pageSize]="pageSize"
+    [maxSize]="5"
+    [boundaryLinks]="true"
+    (pageChange)="onPageChange($event)"
+  >
+  </ngb-pagination>
+</div>
+<div class="d-flex justify-content-center p-2" *ngIf="showPagination">
+  <select
+    class="form-select float-end"
+    style="float: right; width: auto"
+    [ngModel]="itemsPerPage"
+    (ngModelChange)="onItemsPerPageChange($event)"
+  >
+    <option
+      *ngFor="let pageSizeOption of pageSizeOptions"
+      [ngValue]="pageSizeOption.id"
+    >
+      {{ pageSizeOption.value }}
+    </option>
+  </select>
+</div>

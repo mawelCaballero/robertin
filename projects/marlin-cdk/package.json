@@ -1,0 +1,30 @@
+{
+  "name": "marlin-cdk",
+  "version": "0.0.1",
+
+
+  "scripts": {
+    "ng": "nx",
+    "build-lib": "ngcc & ng build marlin-cdk",
+    "build-lib-prod": "ng build --prod marlin-cdk",
+    "package": "cd ./../../dist/marlin-cdk && npm pack",
+    "post-build-lib": "cp -R ./src/assets ./../../dist/marlin-cdk/lib/assets && npm run copy-md-lib",
+    "copy-md-lib": "cp ./../../README.md ./../../dist/marlin-cdk/",
+    "post-build-lib-win": "xcopy .\\src\\assets .\\..\\..\\dist\\marlin-cdk\\lib\\assets",
+    "generate-lib": "npm run build-lib && npm run post-build-lib && npm run package",
+    "generate-lib-prod": "npm run build-lib-prod && npm run post-build-lib && npm run package",
+    "generate-lib-win": "npm run build-lib && npm run post-build-lib-win && npm run package",
+    "generate-lib-prod-win": "npm run build-lib-prod && npm run post-build-lib-win && npm run package",
+    "test": "ngcc && jest --config ./jest.lib.config.js",
+    "build-lib:watch": "ng build --watch marlin-cdk"
+  },
+
+
+  "peerDependencies": {
+    "@angular/common": "^13.0.1",
+    "@angular/core": "^13.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

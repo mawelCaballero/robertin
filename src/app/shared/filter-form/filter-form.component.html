@@ -1,0 +1,159 @@
+<form
+  *ngIf="type === 'rack'"
+  class="d-flex flex-column"
+  [formGroup]="equipmentsForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="px-2">
+    <label labelFor="id">{{ "Uuid" }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="equipmentUuid"
+      placeholder="equipmentUuid"
+      id="Uuid"
+      name="equipmentUuid"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="equipmentype">{{ "Type" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="equipmentype"
+      placeholder="Type"
+      id="equipmentype"
+      name="equipmentype"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="equipmentManufacturer">{{
+      "Manufacturer" | translate
+    }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="equipmentManufacturer"
+      placeholder="Manufacturer"
+      id="equipmentManufacturer"
+      name="equipmentManufacturer"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="equipmentLocation">{{ "Location" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="equipmentLocation"
+      placeholder="Location"
+      id="equipmentLocation"
+      name="equipmentLocation"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="equipmentName">{{ "Name" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="equipmentName"
+      placeholder="Name"
+      id="equipmentName"
+      name="equipmentName"
+    />
+  </div>
+  <div class="px-2">
+    <a href="javascript:void(0)" (click)="navigateAdvanceSearch()">{{
+      "Advance Search" | translate
+    }}</a>
+  </div>
+  <div class="px-2">
+    <button class="btn-primary btn btn-lg btn-block">Search</button>
+  </div>
+</form>
+<form
+  *ngIf="type === 'path'"
+  class="d-flex flex-column"
+  [formGroup]="linksForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="px-2">
+    <label labelFor="uuid">{{ "Uuid" }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="uuid"
+      placeholder="uuid"
+      id="Uuid"
+      name="uuid"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="location">{{ "Location" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="location"
+      placeholder="Location"
+      id="location"
+      name="location"
+    />
+  </div>
+  <div class="px-2">
+    <label labelFor="name">{{ "Name" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="name"
+      placeholder="Name"
+      id="name"
+      name="name"
+    />
+  </div>
+  <div class="px-2">
+    <a href="javascript:void(0)" (click)="navigateAdvanceSearch()">{{
+      "Advance Search" | translate
+    }}</a>
+  </div>
+  <div class="px-2">
+    <button class="btn-primary btn btn-lg btn-block">Search</button>
+  </div>
+</form>
+
+<form
+  *ngIf="type === 'ne'"
+  class="d-flex flex-column"
+  [formGroup]="linksForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="px-2">
+    <label labelFor="uuid">{{ "Uuid" }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="uuid"
+      placeholder="uuid"
+      id="Uuid"
+      name="uuid"
+    />
+  </div>
+
+  <div class="px-2">
+    <label labelFor="name">{{ "Name" | translate }}</label>
+    <input
+      type="text"
+      class="form-control"
+      formControlName="name"
+      placeholder="Name"
+      id="name"
+      name="name"
+    />
+  </div>
+  <div class="px-2">
+    <a href="javascript:void(0)" (click)="navigateAdvanceSearch()">{{
+      "Advance Search" | translate
+    }}</a>
+  </div>
+  <div class="px-2">
+    <button class="btn-primary btn btn-lg btn-block">Search</button>
+  </div>
+</form>

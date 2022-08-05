@@ -1,0 +1,58 @@
+// In this scss you can overwrite all our scss, we suggested you to add your scss into this, so whenever the update comes it will not affect your code.
+$merkator-colors: (
+  primary-1:  #151E36,
+  primary-1-light:  rgba(#151E36, 0.80),
+  primary-2: #027375,
+  primary-2-light: rgba(#027375,0.80),
+
+  primary-3: #FFFFFF,
+  secondary-1: #67ABAC,
+  secondary-2: #D4E9DA,
+  secondary-3: #F0F6F2,
+  att-1: #F9B233,
+  att-2: #BCBCBC
+
+) !default;
+
+.btn-primary:hover, .btn-info:hover{
+
+  background-color: map-get($merkator-colors, primary-1-light);
+
+}
+.btn-default, .btn-info {
+  background-color: map-get($merkator-colors, primary-1);
+}
+
+.btn-secondary {
+  background-color: map-get($merkator-colors, primary-2);
+}
+
+.btn-secondary:hover {
+  background-color: map-get($merkator-colors, primary-2-light);
+}
+
+.btn-warning{
+  background-color: map-get($merkator-colors, att-1)
+}
+
+.topbar .navbar-collapse, #main-wrapper .topbar, .collapse {
+  background-color:white!important;
+  color: map-get($merkator-colors, primary-1)!important;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.theme-link {
+
+    background: white;
+
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: rgba(0, 0, 0, 0.55) !important;
+
+}
+
