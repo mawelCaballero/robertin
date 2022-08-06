@@ -119,15 +119,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HttpLoaderFactory": () => (/* binding */ HttpLoaderFactory),
 /* harmony export */   "loggerCallback": () => (/* binding */ loggerCallback)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/platform-browser */ 7532);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/platform-browser/animations */ 6263);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common */ 8750);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/forms */ 6410);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/common/http */ 3690);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/router */ 3903);
-/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 9109);
-/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! angular-feather */ 8689);
-/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! angular-feather/icons */ 779);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/platform-browser */ 7532);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/platform-browser/animations */ 6263);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @angular/common */ 8750);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/forms */ 6410);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ 3690);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/router */ 3903);
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ 9109);
+/* harmony import */ var angular_feather__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! angular-feather */ 8689);
+/* harmony import */ var angular_feather_icons__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! angular-feather/icons */ 779);
 /* harmony import */ var _layouts_full_full_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./layouts/full/full.component */ 6729);
 /* harmony import */ var _layouts_blank_blank_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./layouts/blank/blank.component */ 1658);
 /* harmony import */ var _shared_vertical_header_vertical_navigation_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/vertical-header/vertical-navigation.component */ 3132);
@@ -138,13 +138,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ 158);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ 5041);
 /* harmony import */ var _shared_spinner_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./shared/spinner.component */ 3812);
-/* harmony import */ var ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-perfect-scrollbar */ 9150);
-/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @ngx-translate/core */ 325);
-/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @ngx-translate/http-loader */ 9476);
-/* harmony import */ var marlin_cdk__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! marlin-cdk */ 6486);
+/* harmony import */ var ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-perfect-scrollbar */ 9150);
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @ngx-translate/core */ 325);
+/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @ngx-translate/http-loader */ 9476);
+/* harmony import */ var marlin_cdk__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! marlin-cdk */ 6486);
 /* harmony import */ var _service_token_interceptor_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./service/token-interceptor.service */ 3600);
 /* harmony import */ var _service_notification_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./service/notification.service */ 7320);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/core */ 8259);
+/* harmony import */ var _graphics_graphics_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./graphics/graphics.component */ 7881);
+/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ng-apexcharts */ 7916);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/core */ 8259);
+
+
 
 
 
@@ -177,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function HttpLoaderFactory(http) {
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_12__.TranslateHttpLoader(http, "./assets/i18n/", ".json");
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_13__.TranslateHttpLoader(http, "./assets/i18n/", ".json");
 }
 function loggerCallback(message) {
     console.debug(message);
@@ -191,49 +195,50 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG = {
 class AppModule {
 }
 AppModule.ɵfac = function AppModule_Factory(t) { return new (t || AppModule)(); };
-AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__.AppComponent] });
-AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵdefineInjector"]({ providers: [
+AppModule.ɵmod = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__.AppComponent] });
+AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵdefineInjector"]({ providers: [
         _service_notification_service__WEBPACK_IMPORTED_MODULE_11__.NotificationService,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktToastService,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktToastService,
         {
-            provide: ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_15__.PERFECT_SCROLLBAR_CONFIG,
+            provide: ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_16__.PERFECT_SCROLLBAR_CONFIG,
             useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
         },
         {
-            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HTTP_INTERCEPTORS,
+            provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HTTP_INTERCEPTORS,
             useClass: _service_token_interceptor_service__WEBPACK_IMPORTED_MODULE_10__.TokenInterceptorService,
             multi: true,
         },
     ], imports: [[
-            _angular_common__WEBPACK_IMPORTED_MODULE_17__.CommonModule,
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__.BrowserModule,
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_19__.BrowserAnimationsModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule,
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule,
-            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_21__.NgbModule,
-            angular_feather__WEBPACK_IMPORTED_MODULE_22__.FeatherModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktToastModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktHeaderModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktFooterModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktTableModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktSidenavModule,
-            marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktDropdownModule,
-            angular_feather__WEBPACK_IMPORTED_MODULE_22__.FeatherModule.pick(angular_feather_icons__WEBPACK_IMPORTED_MODULE_23__.allIcons),
-            _angular_router__WEBPACK_IMPORTED_MODULE_24__.RouterModule.forRoot(_app_routing_module__WEBPACK_IMPORTED_MODULE_7__.Approutes, {
+            _angular_common__WEBPACK_IMPORTED_MODULE_18__.CommonModule,
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule,
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__.BrowserAnimationsModule,
+            ng_apexcharts__WEBPACK_IMPORTED_MODULE_21__.NgApexchartsModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_22__.ReactiveFormsModule,
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HttpClientModule,
+            _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_23__.NgbModule,
+            angular_feather__WEBPACK_IMPORTED_MODULE_24__.FeatherModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktToastModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktHeaderModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktFooterModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktTableModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktSidenavModule,
+            marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktDropdownModule,
+            angular_feather__WEBPACK_IMPORTED_MODULE_24__.FeatherModule.pick(angular_feather_icons__WEBPACK_IMPORTED_MODULE_25__.allIcons),
+            _angular_router__WEBPACK_IMPORTED_MODULE_26__.RouterModule.forRoot(_app_routing_module__WEBPACK_IMPORTED_MODULE_7__.Approutes, {
                 useHash: true,
                 onSameUrlNavigation: "reload",
             }),
-            ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_15__.PerfectScrollbarModule,
-            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_25__.TranslateModule.forRoot({
+            ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_16__.PerfectScrollbarModule,
+            _ngx_translate_core__WEBPACK_IMPORTED_MODULE_27__.TranslateModule.forRoot({
                 loader: {
-                    provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_25__.TranslateLoader,
+                    provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_27__.TranslateLoader,
                     useFactory: HttpLoaderFactory,
-                    deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClient],
+                    deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HttpClient],
                 },
             }),
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__.AppComponent,
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_14__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__.AppComponent,
         _shared_spinner_component__WEBPACK_IMPORTED_MODULE_9__.SpinnerComponent,
         _layouts_full_full_component__WEBPACK_IMPORTED_MODULE_0__.FullComponent,
         _layouts_blank_blank_component__WEBPACK_IMPORTED_MODULE_1__.BlankComponent,
@@ -241,20 +246,134 @@ AppModule.ɵinj = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_13__["ɵ�
         _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_4__.BreadcrumbComponent,
         _shared_vertical_sidebar_vertical_sidebar_component__WEBPACK_IMPORTED_MODULE_3__.VerticalSidebarComponent,
         _shared_horizontal_header_horizontal_navigation_component__WEBPACK_IMPORTED_MODULE_5__.HorizontalNavigationComponent,
-        _shared_horizontal_sidebar_horizontal_sidebar_component__WEBPACK_IMPORTED_MODULE_6__.HorizontalSidebarComponent], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_17__.CommonModule,
-        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_18__.BrowserModule,
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_19__.BrowserAnimationsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_20__.FormsModule,
-        _angular_forms__WEBPACK_IMPORTED_MODULE_20__.ReactiveFormsModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_16__.HttpClientModule,
-        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_21__.NgbModule,
-        angular_feather__WEBPACK_IMPORTED_MODULE_22__.FeatherModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktToastModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktHeaderModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktFooterModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktTableModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktSidenavModule,
-        marlin_cdk__WEBPACK_IMPORTED_MODULE_14__.MktDropdownModule, angular_feather__WEBPACK_IMPORTED_MODULE_22__.FeatherModule, _angular_router__WEBPACK_IMPORTED_MODULE_24__.RouterModule, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_15__.PerfectScrollbarModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_25__.TranslateModule] }); })();
+        _shared_horizontal_sidebar_horizontal_sidebar_component__WEBPACK_IMPORTED_MODULE_6__.HorizontalSidebarComponent,
+        _graphics_graphics_component__WEBPACK_IMPORTED_MODULE_12__.GraphicsComponent], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_18__.CommonModule,
+        _angular_platform_browser__WEBPACK_IMPORTED_MODULE_19__.BrowserModule,
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_20__.BrowserAnimationsModule,
+        ng_apexcharts__WEBPACK_IMPORTED_MODULE_21__.NgApexchartsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.FormsModule,
+        _angular_forms__WEBPACK_IMPORTED_MODULE_22__.ReactiveFormsModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_17__.HttpClientModule,
+        _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_23__.NgbModule,
+        angular_feather__WEBPACK_IMPORTED_MODULE_24__.FeatherModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktToastModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktHeaderModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktFooterModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktTableModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktSidenavModule,
+        marlin_cdk__WEBPACK_IMPORTED_MODULE_15__.MktDropdownModule, angular_feather__WEBPACK_IMPORTED_MODULE_24__.FeatherModule, _angular_router__WEBPACK_IMPORTED_MODULE_26__.RouterModule, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_16__.PerfectScrollbarModule, _ngx_translate_core__WEBPACK_IMPORTED_MODULE_27__.TranslateModule] }); })();
+
+
+/***/ }),
+
+/***/ 7881:
+/*!************************************************!*\
+  !*** ./src/app/graphics/graphics.component.ts ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GraphicsComponent": () => (/* binding */ GraphicsComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 8259);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 3903);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ 3690);
+/* harmony import */ var ng_apexcharts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-apexcharts */ 7916);
+
+
+
+
+
+
+
+const _c0 = ["chart"];
+class GraphicsComponent {
+    constructor(route, http) {
+        this.route = route;
+        this.http = http;
+        this.data = {
+            name: "",
+            data: [],
+            categories: [],
+            referenceMaxData: [],
+            referenceMinData: [],
+        };
+        this.http.get("assets/data/informe.json").subscribe((data) => {
+            this.data.name = this.id;
+            data.items.forEach((element) => {
+                this.data.categories.push(element.fecha);
+                this.data.data.push(element.datos[this.id].value);
+                this.data.referenceMaxData.push(data.rango_referencial[this.id].max);
+                this.data.referenceMinData.push(data.rango_referencial[this.id].min);
+            });
+            this.chartOptions = {
+                series: [
+                    {
+                        name: this.data.name,
+                        data: this.data.data,
+                    },
+                    {
+                        name: "Referencia Máxima",
+                        data: this.data.referenceMaxData,
+                    },
+                    {
+                        name: "Referencia Mínima",
+                        data: this.data.referenceMinData,
+                    },
+                ],
+                chart: {
+                    height: 350,
+                    type: "line",
+                    zoom: {
+                        enabled: false,
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                stroke: {
+                    curve: "straight",
+                },
+                title: {
+                    text: "Informe de " + this.data.name,
+                    align: "left",
+                },
+                grid: {
+                    row: {
+                        colors: ["#f3f3f3", "transparent"],
+                        opacity: 0.5,
+                    },
+                },
+                xaxis: {
+                    categories: this.data.categories,
+                },
+            };
+        });
+    }
+    ngOnInit() {
+        this.sub = this.route.params.subscribe((params) => {
+            this.id = params["id"]; // (+) converts string 'id' to a number
+        });
+    }
+    ngOnDestroy() {
+        this.sub.unsubscribe();
+    }
+}
+GraphicsComponent.ɵfac = function GraphicsComponent_Factory(t) { return new (t || GraphicsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__.HttpClient)); };
+GraphicsComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: GraphicsComponent, selectors: [["app-graphics"]], viewQuery: function GraphicsComponent_Query(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, 5);
+    } if (rf & 2) {
+        let _t;
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.chart = _t.first);
+    } }, decls: 2, vars: 7, consts: [["id", "chart"], [3, "series", "chart", "xaxis", "dataLabels", "grid", "stroke", "title"]], template: function GraphicsComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "apx-chart", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("series", ctx.chartOptions.series)("chart", ctx.chartOptions.chart)("xaxis", ctx.chartOptions.xaxis)("dataLabels", ctx.chartOptions.dataLabels)("grid", ctx.chartOptions.grid)("stroke", ctx.chartOptions.stroke)("title", ctx.chartOptions.title);
+    } }, directives: [ng_apexcharts__WEBPACK_IMPORTED_MODULE_3__.ChartComponent], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJncmFwaGljcy5jb21wb25lbnQuc2NzcyJ9 */"] });
 
 
 /***/ }),
@@ -447,7 +566,7 @@ FullComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("sidebarbg", ctx.options.sidebarbg);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.options.layout === "horizontal")("ngIfElse", _r1);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktHeaderComponent, _shared_vertical_header_vertical_navigation_component__WEBPACK_IMPORTED_MODULE_0__.VerticalNavigationComponent, _shared_horizontal_header_horizontal_navigation_component__WEBPACK_IMPORTED_MODULE_1__.HorizontalNavigationComponent, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktSidenavComponent, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _shared_horizontal_sidebar_horizontal_sidebar_component__WEBPACK_IMPORTED_MODULE_2__.HorizontalSidebarComponent, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_9__.PerfectScrollbarDirective, _shared_vertical_sidebar_vertical_sidebar_component__WEBPACK_IMPORTED_MODULE_3__.VerticalSidebarComponent, _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_4__.BreadcrumbComponent, _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterOutlet, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktFooterComponent], styles: [".max-width[_ngcontent-%COMP%] {\n  max-width: 1440px;\n  margin: 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBQTtFQUNBLGNBQUE7QUFDRiIsImZpbGUiOiJmdWxsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1heC13aWR0aCB7XHJcbiAgbWF4LXdpZHRoOiAxNDQwcHg7XHJcbiAgbWFyZ2luOiAwIGF1dG87XHJcbn1cclxuIl19 */"] });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_7__.NgClass, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktHeaderComponent, _shared_vertical_header_vertical_navigation_component__WEBPACK_IMPORTED_MODULE_0__.VerticalNavigationComponent, _shared_horizontal_header_horizontal_navigation_component__WEBPACK_IMPORTED_MODULE_1__.HorizontalNavigationComponent, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktSidenavComponent, _angular_common__WEBPACK_IMPORTED_MODULE_7__.NgIf, _shared_horizontal_sidebar_horizontal_sidebar_component__WEBPACK_IMPORTED_MODULE_2__.HorizontalSidebarComponent, ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_9__.PerfectScrollbarDirective, _shared_vertical_sidebar_vertical_sidebar_component__WEBPACK_IMPORTED_MODULE_3__.VerticalSidebarComponent, _shared_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_4__.BreadcrumbComponent, _angular_router__WEBPACK_IMPORTED_MODULE_6__.RouterOutlet, marlin_cdk__WEBPACK_IMPORTED_MODULE_8__.MktFooterComponent], styles: [".max-width[_ngcontent-%COMP%] {\n  max-width: 1440px;\n  margin: 0 auto;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bGwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBQTtFQUNBLGNBQUE7QUFDRiIsImZpbGUiOiJmdWxsLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1heC13aWR0aCB7XG4gIG1heC13aWR0aDogMTQ0MHB4O1xuICBtYXJnaW46IDAgYXV0bztcbn1cbiJdfQ== */"] });
 
 
 /***/ }),
@@ -1521,7 +1640,7 @@ SpinnerComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_1_
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](0, SpinnerComponent_div_0_Template, 7, 0, "div", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.isSpinnerVisible);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf], styles: [".loading {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  opacity: 0.8;\n  background: grey;\n  z-index: 1000;\n  display: flex;\n  justify-content: center;\n}\n\n.spinner {\n  top: 10% !important;\n  display: flex;\n  flex-direction: row;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNwaW5uZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsUUFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7QUFDRjs7QUFFQTtFQUNFLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0FBQ0YiLCJmaWxlIjoic3Bpbm5lci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2FkaW5nIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAwO1xyXG4gIGxlZnQ6IDA7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgb3BhY2l0eTogMC44O1xyXG4gIGJhY2tncm91bmQ6IGdyZXk7XHJcbiAgei1pbmRleDogMTAwMDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uc3Bpbm5lciB7XHJcbiAgdG9wOiAxMCUgIWltcG9ydGFudDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcbn1cclxuIl19 */"], encapsulation: 2 });
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf], styles: [".loading {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  opacity: 0.8;\n  background: grey;\n  z-index: 1000;\n  display: flex;\n  justify-content: center;\n}\n\n.spinner {\n  top: 10% !important;\n  display: flex;\n  flex-direction: row;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNwaW5uZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EsUUFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLGFBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7QUFDRjs7QUFFQTtFQUNFLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0FBQ0YiLCJmaWxlIjoic3Bpbm5lci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2FkaW5nIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBvcGFjaXR5OiAwLjg7XG4gIGJhY2tncm91bmQ6IGdyZXk7XG4gIHotaW5kZXg6IDEwMDA7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4uc3Bpbm5lciB7XG4gIHRvcDogMTAlICFpbXBvcnRhbnQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4iXX0= */"], encapsulation: 2 });
 
 
 /***/ }),
@@ -1694,7 +1813,7 @@ VerticalNavigationComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTE
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](4, "li", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
-    } }, styles: [".searchResults[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 0;\n  opacity: 0.8;\n  background: #151e36;\n  color: white;\n  min-height: 200px;\n  width: 100%;\n  padding: 10px;\n}\n.searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover, .searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:visited {\n  color: white;\n}\n.searchResults[_ngcontent-%COMP%]:focus {\n  border: 1px solid white;\n}\n.result-item[_ngcontent-%COMP%] {\n  padding: 10px;\n}\n.result-item[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin-right: 10px;\n  border-radius: 10px;\n  border: 1px solid white;\n  padding: 5px;\n}\n.result-item[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  padding: 5px;\n}\n.result-item[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]:hover {\n  border: 1px solid #151e36;\n}\n.result-item[_ngcontent-%COMP%]:focus {\n  border-radius: 10px;\n  border: 1px solid #888d98;\n}\n.result-item[_ngcontent-%COMP%]:hover {\n  border: 2px solid #f9fafa;\n  border-radius: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZlcnRpY2FsLW5hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtBQUNGO0FBQUU7OztFQUdFLFlBQUE7QUFFSjtBQUVBO0VBQ0UsdUJBQUE7QUFDRjtBQUVBO0VBQ0UsYUFBQTtBQUNGO0FBQ0U7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxZQUFBO0FBQ0o7QUFFRTtFQUNFLFlBQUE7QUFBSjtBQUdFO0VBQ0UseUJBQUE7QUFESjtBQUtBO0VBQ0UsbUJBQUE7RUFDQSx5QkFBQTtBQUZGO0FBS0E7RUFDRSx5QkFBQTtFQUNBLG1CQUFBO0FBRkYiLCJmaWxlIjoidmVydGljYWwtbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZWFyY2hSZXN1bHRzIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogMDtcclxuICBvcGFjaXR5OiAwLjg7XHJcbiAgYmFja2dyb3VuZDogIzE1MWUzNjtcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgbWluLWhlaWdodDogMjAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgcGFkZGluZzogMTBweDtcclxuICBhLFxyXG4gIGE6aG92ZXIsXHJcbiAgYTp2aXNpdGVkIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICB9XHJcbn1cclxuXHJcbi5zZWFyY2hSZXN1bHRzOmZvY3VzIHtcclxuICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcclxufVxyXG5cclxuLnJlc3VsdC1pdGVtIHtcclxuICBwYWRkaW5nOiAxMHB4O1xyXG5cclxuICBwIHtcclxuICAgIG1hcmdpbi1yaWdodDogMTBweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcclxuICAgIHBhZGRpbmc6IDVweDtcclxuICB9XHJcblxyXG4gIGEge1xyXG4gICAgcGFkZGluZzogNXB4O1xyXG4gIH1cclxuXHJcbiAgcDpob3ZlciB7XHJcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjMTUxZTM2O1xyXG4gIH1cclxufVxyXG5cclxuLnJlc3VsdC1pdGVtOmZvY3VzIHtcclxuICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkICM4ODhkOTg7XHJcbn1cclxuXHJcbi5yZXN1bHQtaXRlbTpob3ZlciB7XHJcbiAgYm9yZGVyOiAycHggc29saWQgI2Y5ZmFmYTtcclxuICBib3JkZXItcmFkaXVzOiAxMHB4O1xyXG59XHJcbiJdfQ== */"] });
+    } }, styles: [".searchResults[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 0;\n  opacity: 0.8;\n  background: #151e36;\n  color: white;\n  min-height: 200px;\n  width: 100%;\n  padding: 10px;\n}\n.searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%], .searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover, .searchResults[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:visited {\n  color: white;\n}\n.searchResults[_ngcontent-%COMP%]:focus {\n  border: 1px solid white;\n}\n.result-item[_ngcontent-%COMP%] {\n  padding: 10px;\n}\n.result-item[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  margin-right: 10px;\n  border-radius: 10px;\n  border: 1px solid white;\n  padding: 5px;\n}\n.result-item[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  padding: 5px;\n}\n.result-item[_ngcontent-%COMP%]   p[_ngcontent-%COMP%]:hover {\n  border: 1px solid #151e36;\n}\n.result-item[_ngcontent-%COMP%]:focus {\n  border-radius: 10px;\n  border: 1px solid #888d98;\n}\n.result-item[_ngcontent-%COMP%]:hover {\n  border: 2px solid #f9fafa;\n  border-radius: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInZlcnRpY2FsLW5hdmlnYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLE9BQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtBQUNGO0FBQUU7OztFQUdFLFlBQUE7QUFFSjtBQUVBO0VBQ0UsdUJBQUE7QUFDRjtBQUVBO0VBQ0UsYUFBQTtBQUNGO0FBQ0U7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7RUFDQSxZQUFBO0FBQ0o7QUFFRTtFQUNFLFlBQUE7QUFBSjtBQUdFO0VBQ0UseUJBQUE7QUFESjtBQUtBO0VBQ0UsbUJBQUE7RUFDQSx5QkFBQTtBQUZGO0FBS0E7RUFDRSx5QkFBQTtFQUNBLG1CQUFBO0FBRkYiLCJmaWxlIjoidmVydGljYWwtbmF2aWdhdGlvbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zZWFyY2hSZXN1bHRzIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAwO1xuICBvcGFjaXR5OiAwLjg7XG4gIGJhY2tncm91bmQ6ICMxNTFlMzY7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWluLWhlaWdodDogMjAwcHg7XG4gIHdpZHRoOiAxMDAlO1xuICBwYWRkaW5nOiAxMHB4O1xuICBhLFxuICBhOmhvdmVyLFxuICBhOnZpc2l0ZWQge1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgfVxufVxuXG4uc2VhcmNoUmVzdWx0czpmb2N1cyB7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHdoaXRlO1xufVxuXG4ucmVzdWx0LWl0ZW0ge1xuICBwYWRkaW5nOiAxMHB4O1xuXG4gIHAge1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHdoaXRlO1xuICAgIHBhZGRpbmc6IDVweDtcbiAgfVxuXG4gIGEge1xuICAgIHBhZGRpbmc6IDVweDtcbiAgfVxuXG4gIHA6aG92ZXIge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMxNTFlMzY7XG4gIH1cbn1cblxuLnJlc3VsdC1pdGVtOmZvY3VzIHtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgYm9yZGVyOiAxcHggc29saWQgIzg4OGQ5ODtcbn1cblxuLnJlc3VsdC1pdGVtOmhvdmVyIHtcbiAgYm9yZGVyOiAycHggc29saWQgI2Y5ZmFmYTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbiJdfQ== */"] });
 
 
 /***/ }),
@@ -2450,7 +2569,7 @@ MktHeaderComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: 'mkt-header',
-      template: "<header class=\"topbar\" [attr.data-navbarbg]=\"options.navbarbg\">\r\n  <nav\r\n    class=\"d-flex top-navbar navbar-expand-lg\"\r\n    [ngClass]=\"options.navbarbg == 'skin6' ? 'navbar-light' : 'navbar-dark'\"\r\n  >\r\n    <div\r\n      class=\"navbar-header\"\r\n      style=\"background-color: #ff0235\"\r\n      [ngClass]=\"expandLogo ? 'expand-logo' : ''\"\r\n      [attr.data-logobg]=\"options.logobg\"\r\n    >\r\n      <!-- This is for the sidebar toggle which is visible on mobile only -->\r\n      <a\r\n        (click)=\"handleToggleSidebarInMobile()\"\r\n        class=\"nav-toggler waves-effect waves-light d-block d-lg-none\"\r\n        href=\"javascript:void(0)\"\r\n      >\r\n        <i [ngClass]=\"showMobileMenu ? 'ti-close' : 'ti-menu'\"></i>\r\n      </a>\r\n      <!-- ============================================================== -->\r\n      <!-- Logo -->\r\n      <!-- ============================================================== -->\r\n      <a class=\"navbar-brand\" href=\"/\">\r\n        <!-- Logo text -->\r\n        <span class=\"logo-text\">\r\n          <!-- dark Logo text -->\r\n          <img\r\n            src=\"assets/images/logo.png\"\r\n            style=\"height: 100px\"\r\n            alt=\"homepage\"\r\n            class=\"dark-logo\"\r\n          />\r\n          <!-- Light Logo text -->\r\n          <!-- <img\r\n            src=\"assets/images/logos/xtreme-white-text.svg\"\r\n            class=\"light-logo\"\r\n            alt=\"homepage\"\r\n          /> -->\r\n        </span>\r\n      </a>\r\n      <!-- ============================================================== -->\r\n      <!-- End Logo -->\r\n      <!-- ============================================================== -->\r\n      <!-- ============================================================== -->\r\n      <!-- Toggle which is visible on mobile only -->\r\n      <!-- ============================================================== -->\r\n      <a\r\n        class=\"topbartoggler d-block d-lg-none waves-effect waves-light\"\r\n        href=\"javascript:void(0)\"\r\n        (click)=\"isCollapsed = !isCollapsed\"\r\n        [attr.aria-expanded]=\"!isCollapsed\"\r\n        data-target=\"#navbarSupportedContent\"\r\n        aria-controls=\"navbarSupportedContent\"\r\n      >\r\n        <i class=\"ti-more\"></i>\r\n      </a>\r\n    </div>\r\n    <!-- ============================================================== -->\r\n    <!-- End Logo -->\r\n    <!-- ============================================================== -->\r\n    <div\r\n      class=\"navbar-collapse collapse\"\r\n      id=\"navbarSupportedContent\"\r\n      [attr.data-navbarbg]=\"options.navbarbg\"\r\n      [ngbCollapse]=\"!isCollapsed\"\r\n    >\r\n      <!-- Horizontal Header -->\r\n      <div *ngIf=\"options.layout === 'horizontal'; else vheader\" class=\"w-100\">\r\n        <ng-content select=\"[id=horizontal-nav]\"></ng-content>\r\n        <!-- <app-horizontal-navigation\r\n          class=\"w-100 d-flex align-items-center justify-content-between\"\r\n        >\r\n        </app-horizontal-navigation> -->\r\n      </div>\r\n\r\n      <!-- Vertical Header -->\r\n      <ng-template #vheader>\r\n        <div class=\"w-100\">\r\n          <ng-content select=\"[id=vertical-nav]\"></ng-content>\r\n          <!-- <mkt-vertical-navigation (toggleSidebar)=\"toggleSidebarType()\" [notifications]=\"notifications\"\r\n            [messages]=\"messages\">\r\n          </mkt-vertical-navigation> -->\r\n        </div>\r\n      </ng-template>\r\n    </div>\r\n  </nav>\r\n</header>\r\n",
+      template: "<header class=\"topbar\" [attr.data-navbarbg]=\"options.navbarbg\">\n  <nav\n    class=\"d-flex top-navbar navbar-expand-lg\"\n    [ngClass]=\"options.navbarbg == 'skin6' ? 'navbar-light' : 'navbar-dark'\"\n  >\n    <div\n      class=\"navbar-header\"\n      style=\"background-color: #ff0235\"\n      [ngClass]=\"expandLogo ? 'expand-logo' : ''\"\n      [attr.data-logobg]=\"options.logobg\"\n    >\n      <!-- This is for the sidebar toggle which is visible on mobile only -->\n      <a\n        (click)=\"handleToggleSidebarInMobile()\"\n        class=\"nav-toggler waves-effect waves-light d-block d-lg-none\"\n        href=\"javascript:void(0)\"\n      >\n        <i [ngClass]=\"showMobileMenu ? 'ti-close' : 'ti-menu'\"></i>\n      </a>\n      <!-- ============================================================== -->\n      <!-- Logo -->\n      <!-- ============================================================== -->\n      <a class=\"navbar-brand\" href=\"/\">\n        <!-- Logo text -->\n        <span class=\"logo-text\">\n          <!-- dark Logo text -->\n          <img\n            src=\"assets/images/logo.png\"\n            style=\"height: 100px\"\n            alt=\"homepage\"\n            class=\"dark-logo\"\n          />\n          <!-- Light Logo text -->\n          <!-- <img\n            src=\"assets/images/logos/xtreme-white-text.svg\"\n            class=\"light-logo\"\n            alt=\"homepage\"\n          /> -->\n        </span>\n      </a>\n      <!-- ============================================================== -->\n      <!-- End Logo -->\n      <!-- ============================================================== -->\n      <!-- ============================================================== -->\n      <!-- Toggle which is visible on mobile only -->\n      <!-- ============================================================== -->\n      <a\n        class=\"topbartoggler d-block d-lg-none waves-effect waves-light\"\n        href=\"javascript:void(0)\"\n        (click)=\"isCollapsed = !isCollapsed\"\n        [attr.aria-expanded]=\"!isCollapsed\"\n        data-target=\"#navbarSupportedContent\"\n        aria-controls=\"navbarSupportedContent\"\n      >\n        <i class=\"ti-more\"></i>\n      </a>\n    </div>\n    <!-- ============================================================== -->\n    <!-- End Logo -->\n    <!-- ============================================================== -->\n    <div\n      class=\"navbar-collapse collapse\"\n      id=\"navbarSupportedContent\"\n      [attr.data-navbarbg]=\"options.navbarbg\"\n      [ngbCollapse]=\"!isCollapsed\"\n    >\n      <!-- Horizontal Header -->\n      <div *ngIf=\"options.layout === 'horizontal'; else vheader\" class=\"w-100\">\n        <ng-content select=\"[id=horizontal-nav]\"></ng-content>\n        <!-- <app-horizontal-navigation\n          class=\"w-100 d-flex align-items-center justify-content-between\"\n        >\n        </app-horizontal-navigation> -->\n      </div>\n\n      <!-- Vertical Header -->\n      <ng-template #vheader>\n        <div class=\"w-100\">\n          <ng-content select=\"[id=vertical-nav]\"></ng-content>\n          <!-- <mkt-vertical-navigation (toggleSidebar)=\"toggleSidebarType()\" [notifications]=\"notifications\"\n            [messages]=\"messages\">\n          </mkt-vertical-navigation> -->\n        </div>\n      </ng-template>\n    </div>\n  </nav>\n</header>\n",
       styles: [".max-width{max-width:1440px;margin:0 auto}\n"]
     }]
   }], null, {
@@ -2524,7 +2643,7 @@ MktFooterComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: 'mkt-footer',
-      template: "<footer class=\"footer text-center\"><ng-content></ng-content></footer>\r\n",
+      template: "<footer class=\"footer text-center\"><ng-content></ng-content></footer>\n",
       styles: [""]
     }]
   }], function () {
@@ -2608,7 +2727,7 @@ MktSidenavComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODUL
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: 'mkt-sidenav',
-      template: "<aside\r\n  class=\"left-sidebar\"\r\n  [attr.data-sidebarbg]=\"sidebarbg\"\r\n  (mouseover)=\"Logo()\"\r\n  (mouseout)=\"Logo()\"\r\n>\r\n  <ng-content></ng-content>\r\n</aside>\r\n",
+      template: "<aside\n  class=\"left-sidebar\"\n  [attr.data-sidebarbg]=\"sidebarbg\"\n  (mouseover)=\"Logo()\"\n  (mouseout)=\"Logo()\"\n>\n  <ng-content></ng-content>\n</aside>\n",
       styles: [""]
     }]
   }], function () {
@@ -2723,7 +2842,7 @@ MktDropdownComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODU
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: "mkt-dropdown",
-      template: "<div ngbDropdown class=\"d-flex\">\r\n  <button\r\n    class=\"btn d-block w-100 btn-outline-light text-dark waves-effect waves-light\"\r\n    id=\"dropdown1\"\r\n    ngbDropdownToggle\r\n  >\r\n    <i-feather *ngIf=\"icon\" [name]=\"icon\" class=\"icon-small\"></i-feather>\r\n    <ng-container *ngIf=\"!icon\">{{ name }}</ng-container>\r\n  </button>\r\n  <div\r\n    ngbDropdownMenu\r\n    aria-labelledby=\"dropdown1\"\r\n    class=\"w-100 dropdown-container\"\r\n  >\r\n    <div\r\n      class=\"dropdown-element\"\r\n      *ngFor=\"let option of options\"\r\n      (click)=\"toggle(option)\"\r\n    >\r\n      <div ngbDropdownItem class=\"dropdown-item\">\r\n        {{ option }}\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n",
+      template: "<div ngbDropdown class=\"d-flex\">\n  <button\n    class=\"btn d-block w-100 btn-outline-light text-dark waves-effect waves-light\"\n    id=\"dropdown1\"\n    ngbDropdownToggle\n  >\n    <i-feather *ngIf=\"icon\" [name]=\"icon\" class=\"icon-small\"></i-feather>\n    <ng-container *ngIf=\"!icon\">{{ name }}</ng-container>\n  </button>\n  <div\n    ngbDropdownMenu\n    aria-labelledby=\"dropdown1\"\n    class=\"w-100 dropdown-container\"\n  >\n    <div\n      class=\"dropdown-element\"\n      *ngFor=\"let option of options\"\n      (click)=\"toggle(option)\"\n    >\n      <div ngbDropdownItem class=\"dropdown-item\">\n        {{ option }}\n      </div>\n    </div>\n  </div>\n</div>\n",
       styles: [".dropdown-element{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;align-content:center;padding-left:5px}.dropdown-element:hover,.dropdown-element:focus{color:#1e2125;background-color:#e9ecef}.arrow-icon{position:absolute;right:10px;top:10px}.dropdown-container{min-width:200px}.dropdown-item{pointer-events:none}@media only screen and (min-device-width: 320px) and (max-device-width: 736px){.arrow-icon{display:none!important}}\n"]
     }]
   }], function () {
@@ -2882,7 +3001,7 @@ MktTableComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: "mkt-table",
-      template: "<div class=\"row\">\r\n  <h4 class=\"card-title mb-0\" *ngIf=\"title\">\r\n    <span class=\"lstick\"></span>{{ title }}\r\n  </h4>\r\n  <span class=\"card-subtitle\" *ngIf=\"subtitle\">{{ subtitle }}</span>\r\n</div>\r\n<div class=\"table-responsive\">\r\n  <table class=\"table table-striped border material\" id=\"data-table\">\r\n    <ng-content></ng-content>\r\n  </table>\r\n</div>\r\n<div class=\"d-flex justify-content-center p-2\" *ngIf=\"showPagination\">\r\n  <ngb-pagination\r\n    [collectionSize]=\"dataLength\"\r\n    [(page)]=\"page\"\r\n    [ellipses]=\"true\"\r\n    [pageSize]=\"pageSize\"\r\n    [maxSize]=\"5\"\r\n    [boundaryLinks]=\"true\"\r\n    (pageChange)=\"onPageChange($event)\"\r\n  >\r\n  </ngb-pagination>\r\n</div>\r\n<div class=\"d-flex justify-content-center p-2\" *ngIf=\"showPagination\">\r\n  <select\r\n    class=\"form-select float-end\"\r\n    style=\"float: right; width: auto\"\r\n    [ngModel]=\"itemsPerPage\"\r\n    (ngModelChange)=\"onItemsPerPageChange($event)\"\r\n  >\r\n    <option\r\n      *ngFor=\"let pageSizeOption of pageSizeOptions\"\r\n      [ngValue]=\"pageSizeOption.id\"\r\n    >\r\n      {{ pageSizeOption.value }}\r\n    </option>\r\n  </select>\r\n</div>\r\n",
+      template: "<div class=\"row\">\n  <h4 class=\"card-title mb-0\" *ngIf=\"title\">\n    <span class=\"lstick\"></span>{{ title }}\n  </h4>\n  <span class=\"card-subtitle\" *ngIf=\"subtitle\">{{ subtitle }}</span>\n</div>\n<div class=\"table-responsive\">\n  <table class=\"table table-striped border material\" id=\"data-table\">\n    <ng-content></ng-content>\n  </table>\n</div>\n<div class=\"d-flex justify-content-center p-2\" *ngIf=\"showPagination\">\n  <ngb-pagination\n    [collectionSize]=\"dataLength\"\n    [(page)]=\"page\"\n    [ellipses]=\"true\"\n    [pageSize]=\"pageSize\"\n    [maxSize]=\"5\"\n    [boundaryLinks]=\"true\"\n    (pageChange)=\"onPageChange($event)\"\n  >\n  </ngb-pagination>\n</div>\n<div class=\"d-flex justify-content-center p-2\" *ngIf=\"showPagination\">\n  <select\n    class=\"form-select float-end\"\n    style=\"float: right; width: auto\"\n    [ngModel]=\"itemsPerPage\"\n    (ngModelChange)=\"onItemsPerPageChange($event)\"\n  >\n    <option\n      *ngFor=\"let pageSizeOption of pageSizeOptions\"\n      [ngValue]=\"pageSizeOption.id\"\n    >\n      {{ pageSizeOption.value }}\n    </option>\n  </select>\n</div>\n",
       styles: [".material{background-color:unset!important}\n"]
     }]
   }], function () {
@@ -3018,7 +3137,7 @@ MktCardComponent.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0
     type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
     args: [{
       selector: 'mkt-card',
-      template: "<div class=\"card text-white bg-{{ cardConfiguration?.cardType }}\">\r\n  <div class=\"card-body\" (click)=\"onCardClick($event)\">\r\n    <div class=\"d-flex flex-row align-items-center mb-3\">\r\n      <span style=\"padding-bottom: 10px; padding-right: 5px\">\r\n        <i-feather\r\n          [name]=\"cardConfiguration?.iconType\"\r\n          class=\"feather-lg fill-white\"\r\n        ></i-feather>\r\n      </span>\r\n      <h3 class=\"card-title pl-3 font-medium\">\r\n        {{ cardConfiguration?.title }}\r\n      </h3>\r\n      <span style=\"padding-bottom: 10px; padding-right: 5px\">\r\n        <i-feather name=\"alarm\" class=\"alert-triangule fill-white\"></i-feather>\r\n      </span>\r\n    </div>\r\n    <div class=\"row text-left\">\r\n      <h6 class=\"card-subtitle text-white\">\r\n        {{ cardConfiguration?.subtitle }}\r\n      </h6>\r\n    </div>\r\n    <div\r\n      class=\"row text-center text-white m-2\"\r\n      style=\"\r\n        border: 1px solid whitesmoke;\r\n        -webkit-background-clip: padding-box; /* for Safari */\r\n        background-clip: padding-box;\r\n        border-radius: 2px;\r\n        padding: 5px;\r\n      \"\r\n    >\r\n      <div\r\n        *ngFor=\"let item of cardConfiguration.text\"\r\n        class=\"col-12 text-center text-uppercase font-weight-bold d-flex flex-row\"\r\n      >\r\n        <span class=\"fs-3 flex-row flex-grow-3 text-center op-5\">\r\n          {{ item.split(\":\")[0] + \":\" }}\r\n        </span>\r\n        <span class=\"fs-3 flex-row text-center\">\r\n          {{ item.split(\":\")[1] }}\r\n        </span>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n",
+      template: "<div class=\"card text-white bg-{{ cardConfiguration?.cardType }}\">\n  <div class=\"card-body\" (click)=\"onCardClick($event)\">\n    <div class=\"d-flex flex-row align-items-center mb-3\">\n      <span style=\"padding-bottom: 10px; padding-right: 5px\">\n        <i-feather\n          [name]=\"cardConfiguration?.iconType\"\n          class=\"feather-lg fill-white\"\n        ></i-feather>\n      </span>\n      <h3 class=\"card-title pl-3 font-medium\">\n        {{ cardConfiguration?.title }}\n      </h3>\n      <span style=\"padding-bottom: 10px; padding-right: 5px\">\n        <i-feather name=\"alarm\" class=\"alert-triangule fill-white\"></i-feather>\n      </span>\n    </div>\n    <div class=\"row text-left\">\n      <h6 class=\"card-subtitle text-white\">\n        {{ cardConfiguration?.subtitle }}\n      </h6>\n    </div>\n    <div\n      class=\"row text-center text-white m-2\"\n      style=\"\n        border: 1px solid whitesmoke;\n        -webkit-background-clip: padding-box; /* for Safari */\n        background-clip: padding-box;\n        border-radius: 2px;\n        padding: 5px;\n      \"\n    >\n      <div\n        *ngFor=\"let item of cardConfiguration.text\"\n        class=\"col-12 text-center text-uppercase font-weight-bold d-flex flex-row\"\n      >\n        <span class=\"fs-3 flex-row flex-grow-3 text-center op-5\">\n          {{ item.split(\":\")[0] + \":\" }}\n        </span>\n        <span class=\"fs-3 flex-row text-center\">\n          {{ item.split(\":\")[1] }}\n        </span>\n      </div>\n    </div>\n  </div>\n</div>\n",
       styles: [""]
     }]
   }], function () {

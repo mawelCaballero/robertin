@@ -47,6 +47,7 @@
     "esri-loader": "^3.5.0",
     "file-saver": "^2.0.5",
     "i": "^0.3.7",
+    "marlin-cdk": "file:dist/marlin-cdk",
     "ng-apexcharts": "^1.7.1",
     "ngx-bootstrap-treeview": "^2.0.0",
     "ngx-perfect-scrollbar": "^9.0.0",
