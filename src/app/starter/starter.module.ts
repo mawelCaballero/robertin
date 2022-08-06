@@ -11,6 +11,7 @@ import { HttpClient } from "@angular/common/http";
 import { NgApexchartsModule } from "ng-apexcharts";
 import { NivelDirective } from "./components/nivel.directive";
 import { TrendDirective } from "./components/trend.directive";
+import { GraphicsComponent } from "../graphics/graphics.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,17 @@ const routes: Routes = [
       ],
     },
     component: StarterComponent,
+  },
+  {
+    path: "line-chart/:id",
+    data: {
+      title: "Line Chart",
+      urls: [
+        { title: "Starter ", url: "/dashboard" },
+        { title: "Line Chart", url: "/line-chart" },
+      ],
+    },
+    component: GraphicsComponent,
   },
 ];
 

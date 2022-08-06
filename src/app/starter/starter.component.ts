@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { ChangeDetectorRef, Component, ViewEncapsulation } from "@angular/core";
 import { BehaviorSubject, Subject } from "rxjs";
+import { Router } from "@angular/router";
 
 @Component({
   templateUrl: "./starter.component.html",
@@ -18,7 +19,11 @@ export class StarterComponent {
 
   data: any = {};
 
-  constructor(private http: HttpClient, private cdRef: ChangeDetectorRef) {
+  constructor(
+    private http: HttpClient,
+    private cdRef: ChangeDetectorRef,
+    private router: Router
+  ) {
     this.http.get("assets/data/informe.json").subscribe((data: any) => {
       this.data = data;
       this.valorReferencial = data.rango_referencial;
@@ -56,7 +61,6 @@ export class StarterComponent {
 
   getPrevData(currentData: any) {
     const indexPrev = this.data.items.indexOf(currentData) - 1;
-
     if (indexPrev >= 0) {
       const prevData = this.data.items[indexPrev];
       console.log("PrevData", prevData);

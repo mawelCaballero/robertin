@@ -43,6 +43,8 @@ import {
 import { environment } from "./../environments/environment";
 import { TokenInterceptorService } from "./service/token-interceptor.service";
 import { NotificationService } from "./service/notification.service";
+import { GraphicsComponent } from "./graphics/graphics.component";
+import { NgApexchartsModule } from "ng-apexcharts";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -70,11 +72,13 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     VerticalSidebarComponent,
     HorizontalNavigationComponent,
     HorizontalSidebarComponent,
+    GraphicsComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    NgApexchartsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
