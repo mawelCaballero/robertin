@@ -647,6 +647,114 @@
           "unit": "pg"
         }
       }
+    },
+    {
+      "fecha": "13/08/2022",
+      "datos": {
+        "leucocitos": {
+          "value": 8.52,
+          "unit": "K/uL"
+        },
+        "neu_pct": {
+          "value": 87.3,
+          "unit": "%"
+        },
+        "lym_pct": {
+          "value": 5.3,
+          "unit": "%"
+        },
+        "mon_pct": {
+          "value": 4.9,
+          "unit": "%"
+        },
+        "eos_pct": {
+          "value": 2.5,
+          "unit": "%"
+        },
+        "baso_pct": {
+          "value": 0.0,
+          "unit": "%"
+        },
+
+        "neu": {
+          "value": 7.44,
+          "unit": "K/µl"
+        },
+
+        "lym": {
+          "value": 0.45,
+          "unit": "K/µl"
+        },
+        "mono": {
+          "value": 0.42,
+          "unit": "K/µl"
+        },
+        "eos": {
+          "value": 0.21,
+          "unit": "K/µl"
+        },
+
+        "baso": {
+          "value": 0,
+          "unit": "K/µl"
+        },
+        "plq": {
+          "value": 275,
+          "unit": "K/µl"
+        },
+        "mpv": {
+          "value": 14,
+          "unit": "fL"
+        },
+        "pdw": {
+          "value": 15.8,
+          "unit": "fL"
+        },
+        "pct": {
+          "value": 0.39,
+          "unit": "%"
+        },
+        "eritrocitos": {
+          "value": 5.39,
+          "unit": "M/µl"
+        },
+        "hct": {
+          "value": 35.6,
+          "unit": "%"
+        },
+        "hgb": {
+          "value": 12.3,
+          "unit": "g/dL"
+        },
+        "mcv": {
+          "value": 66,
+          "unit": "fL"
+        },
+        "mch": {
+          "value": 22.8,
+          "unit": "pg"
+        },
+        "mchc": {
+          "value": 34.6,
+          "unit": "g/dL"
+        },
+        "rdw": {
+          "value": 15.3,
+          "unit": "%"
+        },
+        "retic_pct": {
+          "value": 0.3,
+          "unit": "%"
+        },
+        "retic": {
+          "value": 18.3,
+          "unit": "K/uL"
+        },
+        "ret_he": {
+          "value": 24.3,
+          "unit": "pg"
+        }
+      }
     }
   ],
   "rango_referencial": {
