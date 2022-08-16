@@ -9,8 +9,12 @@
 
           <div class="d-flex row">
             <div class="col-2 text-start">
-              <mkt-dropdown name="Fechas de informes" icon="calendar" (onClick)="onSelectOption($event)"
-                [options]="fechas"></mkt-dropdown>
+              <mkt-dropdown
+                name="Fechas de informes"
+                icon="calendar"
+                (onClick)="onSelectOption($event)"
+                [options]="fechas"
+              ></mkt-dropdown>
             </div>
 
             <div class="col-10 text-end">
@@ -29,8 +33,11 @@
               <div class="col">Tendencia</div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'leucocitos']">Leucocitos
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'leucocitos']"
+                  >Leucocitos
+                </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.leucocitos?.value }}
                 {{ currentData.data?.leucocitos?.unit }}
@@ -39,15 +46,41 @@
                 {{ valorReferencial.leucocitos.min }} -
                 {{ valorReferencial.leucocitos.max }}
               </div>
-              <div class="col" [nivel]="{
-                  value: currentData.data?.leucocitos?.value,
-                  min: valorReferencial.leucocitos.min,
-                  max: valorReferencial.leucocitos.max
-                }"></div>
-              <div class="col" [trend]="{
+              <div
+                class="col justify-content-center"
+                [nivel]="{
+                  value: currentData.data?.lym?.value,
+                  min: valorReferencial.lym.min,
+                  max: valorReferencial.lym.max
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    textType="pepe"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.leucocitos?.value,
+                        min: valorReferencial.leucocitos.min,
+                        max: valorReferencial.leucocitos.max
+                      })
+                    "
+                    [value]="currentData.data?.leucocitos?.value"
+                    [max]="valorReferencial.leucocitos.max"
+                    height="20px"
+                    textType="Pepe"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.leucocitos?.value,
                   prevValue: currentData.prevData?.leucocitos?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
               <div class="col">%NEU</div>
@@ -100,8 +133,9 @@
               <div class="col"></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'neu']">Neu
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'neu']">Neu </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.neu?.value }}
                 {{ currentData.data?.neu?.unit }}
@@ -110,19 +144,45 @@
                 {{ valorReferencial.neu.min }} -
                 {{ valorReferencial.neu.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.neu?.value,
                   min: valorReferencial.neu.min,
                   max: valorReferencial.neu.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    textType="pepe"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.neu?.value,
+                        min: valorReferencial.neu.min,
+                        max: valorReferencial.neu.max
+                      })
+                    "
+                    [value]="currentData.data?.neu?.value"
+                    [max]="valorReferencial.neu.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.neu?.value,
                   prevValue: currentData.prevData?.neu?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'lym']">Lym
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'lym']">Lym </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.lym?.value }}
                 {{ currentData.data?.lym?.unit }}
@@ -131,19 +191,45 @@
                 {{ valorReferencial.lym.min }} -
                 {{ valorReferencial.lym.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.lym?.value,
                   min: valorReferencial.lym.min,
                   max: valorReferencial.lym.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    textType="pepe"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.lym?.value,
+                        min: valorReferencial.lym.min,
+                        max: valorReferencial.lym.max
+                      })
+                    "
+                    [value]="currentData.data?.lym?.value"
+                    [max]="valorReferencial.lym.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.lym?.value,
                   prevValue: currentData.prevData?.lym?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'mono']">Mono
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'mono']">Mono </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.mono?.value }}
                 {{ currentData.data?.mono?.unit }}
@@ -152,19 +238,45 @@
                 {{ valorReferencial.mono.min }} -
                 {{ valorReferencial.mono.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.mono?.value,
                   min: valorReferencial.mono.min,
                   max: valorReferencial.mono.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    textType="pepe"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.mono?.value,
+                        min: valorReferencial.mono.min,
+                        max: valorReferencial.mono.max
+                      })
+                    "
+                    [value]="currentData.data?.mono?.value"
+                    [max]="valorReferencial.mono.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.mono?.value,
                   prevValue: currentData.prevData?.mono?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'eos']">Eos
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'eos']">Eos </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.eos?.value }}
                 {{ currentData.data?.eos?.unit }}
@@ -173,19 +285,44 @@
                 {{ valorReferencial.eos.min }} -
                 {{ valorReferencial.eos.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.eos?.value,
                   min: valorReferencial.eos.min,
                   max: valorReferencial.eos.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.eos?.value,
+                        min: valorReferencial.eos.min,
+                        max: valorReferencial.eos.max
+                      })
+                    "
+                    [value]="currentData.data?.eos?.value"
+                    [max]="valorReferencial.eos.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.eos?.value,
                   prevValue: currentData.prevData?.eos?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'baso']">BASO
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'baso']">BASO </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.baso?.value }}
                 {{ currentData.data?.baso?.unit }}
@@ -194,19 +331,44 @@
                 {{ valorReferencial.baso.min }} -
                 {{ valorReferencial.baso.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.baso?.value,
                   min: valorReferencial.baso.min,
                   max: valorReferencial.baso.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.baso?.value,
+                        min: valorReferencial.baso.min,
+                        max: valorReferencial.baso.max
+                      })
+                    "
+                    [value]="currentData.data?.baso?.value"
+                    [max]="valorReferencial.baso.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.baso?.value,
                   prevValue: currentData.prevData?.baso?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'plq']">PLQ
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'plq']">PLQ </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.plq?.value }}
                 {{ currentData.data?.plq?.unit }}
@@ -215,19 +377,44 @@
                 {{ valorReferencial.plq.min }} -
                 {{ valorReferencial.plq.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.plq?.value,
                   min: valorReferencial.plq.min,
                   max: valorReferencial.plq.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.plq?.value,
+                        min: valorReferencial.plq.min,
+                        max: valorReferencial.plq.max
+                      })
+                    "
+                    [value]="currentData.data?.plq?.value"
+                    [max]="valorReferencial.plq.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.plq?.value,
                   prevValue: currentData.prevData?.plq?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'mpv']">MPV
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'mpv']">MPV </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.mpv?.value }}
                 {{ currentData.data?.mpv?.unit }}
@@ -236,19 +423,44 @@
                 {{ valorReferencial.mpv.min }} -
                 {{ valorReferencial.mpv.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.mpv?.value,
                   min: valorReferencial.mpv.min,
                   max: valorReferencial.mpv.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.mpv?.value,
+                        min: valorReferencial.mpv.min,
+                        max: valorReferencial.mpv.max
+                      })
+                    "
+                    [value]="currentData.data?.mpv?.value"
+                    [max]="valorReferencial.mpv.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.mpv?.value,
                   prevValue: currentData.prevData?.mpv?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'pdw']">PDW
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'pdw']">PDW </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.pdw?.value }}
                 {{ currentData.data?.pdw?.unit }}
@@ -257,19 +469,44 @@
                 {{ valorReferencial.pdw.min }} -
                 {{ valorReferencial.pdw.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.pdw?.value,
                   min: valorReferencial.pdw.min,
                   max: valorReferencial.pdw.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.pdw?.value,
+                        min: valorReferencial.pdw.min,
+                        max: valorReferencial.pdw.max
+                      })
+                    "
+                    [value]="currentData.data?.pdw?.value"
+                    [max]="valorReferencial.pdw.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.pdw?.value,
                   prevValue: currentData.prevData?.pdw?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'pct']">PCT
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'pct']">PCT </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.pct?.value }}
                 {{ currentData.data?.pct?.unit }}
@@ -278,40 +515,92 @@
                 {{ valorReferencial.pct.min }} -
                 {{ valorReferencial.pct.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.pct?.value,
                   min: valorReferencial.pct.min,
                   max: valorReferencial.pct.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.pct?.value,
+                        min: valorReferencial.pct.min,
+                        max: valorReferencial.pct.max
+                      })
+                    "
+                    [value]="currentData.data?.pct?.value"
+                    [max]="valorReferencial.pct.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.pct?.value,
                   prevValue: currentData.prevData?.pct?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'eritrocitos']">Eritrocitos
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'eritrocitos']"
+                  >Eritrocitos
+                </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.eritrocitos?.value }}
                 {{ currentData.data?.eritrocitos?.unit }}
               </div>
               <div class="col">
-                {{ valorReferencial.pct.min }} -
-                {{ valorReferencial.pct.max }}
+                {{ valorReferencial.eritrocitos.min }} -
+                {{ valorReferencial.eritrocitos.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.eritrocitos?.value,
                   min: valorReferencial.eritrocitos.min,
                   max: valorReferencial.eritrocitos.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.eritrocitos?.value,
+                        min: valorReferencial.eritrocitos.min,
+                        max: valorReferencial.eritrocitos.max
+                      })
+                    "
+                    [value]="currentData.data?.eritrocitos?.value"
+                    [max]="valorReferencial.eritrocitos.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.eritrocitos?.value,
                   prevValue: currentData.prevData?.eritrocitos?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'hct']">HCT
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'hct']">HCT </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.hct?.value }}
                 {{ currentData.data?.hct?.unit }}
@@ -320,19 +609,44 @@
                 {{ valorReferencial.hct.min }} -
                 {{ valorReferencial.hct.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.hct?.value,
                   min: valorReferencial.hct.min,
                   max: valorReferencial.hct.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.hct?.value,
+                        min: valorReferencial.hct.min,
+                        max: valorReferencial.hct.max
+                      })
+                    "
+                    [value]="currentData.data?.hct?.value"
+                    [max]="valorReferencial.hct.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.hct?.value,
                   prevValue: currentData.prevData?.hct?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'hgb']">HGB
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'hgb']">HGB </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.hgb?.value }}
                 {{ currentData.data?.hgb?.unit }}
@@ -341,19 +655,44 @@
                 {{ valorReferencial.hgb.min }} -
                 {{ valorReferencial.hgb.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.hgb?.value,
                   min: valorReferencial.hgb.min,
                   max: valorReferencial.hgb.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.hgb?.value,
+                        min: valorReferencial.hgb.min,
+                        max: valorReferencial.hgb.max
+                      })
+                    "
+                    [value]="currentData.data?.hgb?.value"
+                    [max]="valorReferencial.hgb.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.hgb?.value,
                   prevValue: currentData.prevData?.hgb?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'mcv']">MCV
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'mcv']">MCV </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.mcv?.value }}
                 {{ currentData.data?.mcv?.unit }}
@@ -362,19 +701,44 @@
                 {{ valorReferencial.mcv.min }} -
                 {{ valorReferencial.mcv.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.mcv?.value,
                   min: valorReferencial.mcv.min,
                   max: valorReferencial.mcv.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.mcv?.value,
+                        min: valorReferencial.mcv.min,
+                        max: valorReferencial.mcv.max
+                      })
+                    "
+                    [value]="currentData.data?.mcv?.value"
+                    [max]="valorReferencial.mcv.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.mcv?.value,
                   prevValue: currentData.prevData?.mcv?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'mch']">MCH
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'mch']">MCH </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.mch?.value }}
                 {{ currentData.data?.mch?.unit }}
@@ -383,19 +747,44 @@
                 {{ valorReferencial.mch.min }} -
                 {{ valorReferencial.mch.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.mch?.value,
                   min: valorReferencial.mch.min,
                   max: valorReferencial.mch.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.mch?.value,
+                        min: valorReferencial.mch.min,
+                        max: valorReferencial.mch.max
+                      })
+                    "
+                    [value]="currentData.data?.mch?.value"
+                    [max]="valorReferencial.mch.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.mch?.value,
                   prevValue: currentData.prevData?.mch?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'mchc']">MCHC
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'mchc']">MCHC </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.mchc?.value }}
                 {{ currentData.data?.mchc?.unit }}
@@ -404,19 +793,44 @@
                 {{ valorReferencial.mchc.min }} -
                 {{ valorReferencial.mchc.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.mchc?.value,
                   min: valorReferencial.mchc.min,
                   max: valorReferencial.mchc.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.mchc?.value,
+                        min: valorReferencial.mchc.min,
+                        max: valorReferencial.mchc.max
+                      })
+                    "
+                    [value]="currentData.data?.mchc?.value"
+                    [max]="valorReferencial.mchc.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.mchc?.value,
                   prevValue: currentData.prevData?.mchc?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'rdw']">RDW
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'rdw']">RDW </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.rdw?.value }}
                 {{ currentData.data?.rdw?.unit }}
@@ -425,15 +839,39 @@
                 {{ valorReferencial.rdw.min }} -
                 {{ valorReferencial.rdw.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.rdw?.value,
                   min: valorReferencial.rdw.min,
                   max: valorReferencial.rdw.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.rdw?.value,
+                        min: valorReferencial.rdw.min,
+                        max: valorReferencial.rdw.max
+                      })
+                    "
+                    [value]="currentData.data?.rdw?.value"
+                    [max]="valorReferencial.rdw.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.rdw?.value,
                   prevValue: currentData.prevData?.rdw?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
               <div class="col">%RETIC</div>
@@ -446,8 +884,9 @@
               <div class="col"></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'retic']">RETIC
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'retic']">RETIC </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.retic?.value }}
                 {{ currentData.data?.retic?.unit }}
@@ -456,19 +895,44 @@
                 {{ valorReferencial.retic.min }} -
                 {{ valorReferencial.retic.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.retic?.value,
                   min: valorReferencial.retic.min,
                   max: valorReferencial.retic.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.retic?.value,
+                        min: valorReferencial.retic.min,
+                        max: valorReferencial.retic.max
+                      })
+                    "
+                    [value]="currentData.data?.retic?.value"
+                    [max]="valorReferencial.retic.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.retic?.value,
                   prevValue: currentData.prevData?.retic?.value
-                }"></div>
+                }"
+              ></div>
             </div>
             <div class="card-body d-flex border-bottom border-dark">
-              <div class="col"><a [routerLink]="['/starter/line-chart', 'ret_he']">RET HE
-                </a></div>
+              <div class="col">
+                <a [routerLink]="['/starter/line-chart', 'ret_he']">RET HE </a>
+              </div>
               <div class="col">
                 {{ currentData.data?.ret_he?.value }}
                 {{ currentData.data?.ret_he?.unit }}
@@ -477,15 +941,39 @@
                 {{ valorReferencial.ret_he.min }} -
                 {{ valorReferencial.ret_he.max }}
               </div>
-              <div class="col" [nivel]="{
+              <div
+                class="col"
+                [nivel]="{
                   value: currentData.data?.ret_he?.value,
                   min: valorReferencial.ret_he.min,
                   max: valorReferencial.ret_he.max
-                }"></div>
-              <div class="col" [trend]="{
+                }"
+              >
+                <p style="padding-right: 10px">
+                  <ngb-progressbar
+                    [showValue]="true"
+                    style="background-color: #dac8c8"
+                    [type]="
+                      getTypeOfLevel({
+                        value: currentData.data?.ret_he?.value,
+                        min: valorReferencial.ret_he.min,
+                        max: valorReferencial.ret_he.max
+                      })
+                    "
+                    [value]="currentData.data?.ret_he?.value"
+                    [max]="valorReferencial.ret_he.max"
+                    height="20px"
+                  >
+                  </ngb-progressbar>
+                </p>
+              </div>
+              <div
+                class="col"
+                [trend]="{
                   currentValue: currentData.data?.ret_he?.value,
                   prevValue: currentData.prevData?.ret_he?.value
-                }"></div>
+                }"
+              ></div>
             </div>
           </ng-container>
         </div>

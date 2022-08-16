@@ -11,4 +11,14 @@ export const ROUTES: RouteInfo[] = [
     labelClass: "",
     submenu: [],
   },
+  {
+    path: "/guidelines",
+    title: "Medicacion",
+    icon: "clipboard",
+    class: "",
+    extralink: false,
+    label: "",
+    labelClass: "",
+    submenu: [],
+  },
 ];

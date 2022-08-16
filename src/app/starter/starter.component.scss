@@ -1,0 +1,20 @@
+.col a {
+  color: grey;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.col a:hover {
+  color: #000;
+  border: 1px solid #000;
+}
+
+::ng-deep .progress {
+  background-color: #3e5569 !important;
+}
+
+::ng-deep .progress .progress-primary {
+  background-color: #3e5569 !important;
+}

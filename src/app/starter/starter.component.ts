@@ -6,6 +6,7 @@ import { Router } from "@angular/router";
 @Component({
   templateUrl: "./starter.component.html",
   encapsulation: ViewEncapsulation.None,
+  styleUrls: ["./starter.component.scss"],
 })
 export class StarterComponent {
   loginDisplay = false;
@@ -67,5 +68,16 @@ export class StarterComponent {
       return prevData?.datos;
     }
     return {};
+  }
+
+  getTypeOfLevel(values: any) {
+    const { value, min, max } = values;
+
+    if (value < min) {
+      return "warning";
+    } else if (value > max) {
+      return "danger";
+    }
+    return "success";
   }
 }

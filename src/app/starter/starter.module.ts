@@ -12,6 +12,10 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { NivelDirective } from "./components/nivel.directive";
 import { TrendDirective } from "./components/trend.directive";
 import { GraphicsComponent } from "../graphics/graphics.component";
+import {
+  NgbProgressbar,
+  NgbProgressbarModule,
+} from "@ng-bootstrap/ng-bootstrap";
 
 const routes: Routes = [
   {
@@ -47,6 +51,7 @@ const routes: Routes = [
     CommonModule,
     MktCardModule,
     MktDropdownModule,
+    NgbProgressbarModule,
     RouterModule.forChild(routes),
     TranslateModule.forChild({
       loader: {

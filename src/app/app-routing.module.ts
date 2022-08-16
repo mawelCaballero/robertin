@@ -12,6 +12,13 @@ export const Approutes: Routes = [
         loadChildren: () =>
           import("./starter/starter.module").then((m) => m.StarterModule),
       },
+      {
+        path: "guidelines",
+        loadChildren: () =>
+          import("./guidelines/guidelines.module").then(
+            (m) => m.GuidelinesModule
+          ),
+      },
     ],
   },
   {

@@ -25,18 +25,15 @@ export class NivelDirective implements OnInit {
   }
 
   private setLevel() {
+    this.el.nativeElement.style.fontWeight = 800;
     if (this.value.value < this.value.min) {
-      this.el.nativeElement.parentNode.style.backgroundColor = "blue";
-      this.el.nativeElement.parentNode.style.color = "white";
-      this.el.nativeElement.innerText = "Bajo";
+      this.el.nativeElement.parentNode.style.color = "blue";
     } else if (this.value.value > this.value.max) {
-      this.el.nativeElement.innerText = "Alto";
-      this.el.nativeElement.parentNode.style.backgroundColor = "red";
-      this.el.nativeElement.parentNode.style.color = "white";
+      //this.el.nativeElement.innerText = "Alto";
+      this.el.nativeElement.parentNode.style.color = "red";
     } else {
-      this.el.nativeElement.innerText = "";
-      this.el.nativeElement.parentNode.style.color = "black";
-      this.el.nativeElement.parentNode.style.backgroundColor = "unset";
+      //this.el.nativeElement.innerText = "Medio";
+      this.el.nativeElement.parentNode.style.color = "grey";
     }
   }
 }
